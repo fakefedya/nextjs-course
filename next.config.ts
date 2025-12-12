@@ -1,8 +1,36 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
-};
+	/* config options here */
+	turbopack: {
+		rules: {
+			'*.svg': {
+				loaders: [
+					{
+						loader: '@svgr/webpack',
+						options: {
+							icon: true,
+							svgo: true,
+							svgoConfig: {
+								plugins: [
+									{
+										name: 'preset-default',
+										params: {
+											overrides: {
+												removeViewBox: false,
+											},
+										},
+									},
+								],
+							},
+						},
+					},
+				],
+				as: '*.js',
+			},
+		},
+	},
+	reactCompiler: true,
+}
 
-export default nextConfig;
+export default nextConfig

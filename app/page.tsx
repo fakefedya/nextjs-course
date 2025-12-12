@@ -4,6 +4,7 @@ import { Heading } from '@/components/Heading/Heading'
 import { Button } from '@/components/Button/Button'
 import { Paragraph } from '@/components/Paragraph/Paragraph'
 import { Tag } from '@/components/Tag/Tag'
+import { Rating } from '@/components/Rating/Rating'
 
 export const metadata: Metadata = {
 	title: 'Блог – Домашняя страница',
@@ -26,6 +27,7 @@ export default function Home() {
 			<Tag appearance='normal' color='ghost'>
 				Гост
 			</Tag>
+			<Rating isEditable={true} rating={3} />
 		</>
 	)
 }
