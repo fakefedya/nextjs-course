@@ -12,7 +12,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='ru'>
-			<body className={notoSans.className}>{children}</body>
+			<body className={notoSans.className}>
+				<h1>Основной</h1>
+				{children}
+			</body>
 		</html>
 	)
 }
