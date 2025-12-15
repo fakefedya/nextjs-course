@@ -1,5 +1,5 @@
 interface SidebarProps {
-	classname?: string
+	className?: string
 }
 
 export function Sidebar({ ...props }: SidebarProps) {

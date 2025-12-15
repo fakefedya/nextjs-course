@@ -1,9 +1,12 @@
 import { Noto_Sans } from 'next/font/google'
 
 import './globals.css'
+
 import { Header } from '@/components/layout/Header/Header'
 import { Sidebar } from '@/components/layout/Sidebar/Sidebar'
 import { Footer } from '@/components/layout/Footer/Footer'
+
+import styles from './layout.module.css'
 
 const notoSans = Noto_Sans({
 	subsets: ['cyrillic'],
@@ -17,12 +20,12 @@ export default function RootLayout({
 	return (
 		<html lang='ru'>
 			<body className={notoSans.className}>
-				<Header />
-				<main>
-					<Sidebar />
-					{children}
-				</main>
-				<Footer />
+				<div className={styles.app}>
+					<Header className={styles.header} />
+					<Sidebar className={styles.sidebar} />
+					<main className={styles.main}>{children}</main>
+					<Footer className={styles.footer} />
+				</div>
 			</body>
 		</html>
 	)

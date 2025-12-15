@@ -1,5 +1,5 @@
 interface HeaderProps {
-	classname?: string
+	className?: string
 }
 
 export function Header({ ...props }: HeaderProps) {

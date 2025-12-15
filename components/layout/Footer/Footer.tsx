@@ -1,5 +1,5 @@
 interface FooterProps {
-	classname?: string
+	className?: string
 }
 
 export function Footer({ ...props }: FooterProps) {

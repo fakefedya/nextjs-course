@@ -10,6 +10,10 @@
 	--green-light: #c8f8e4;
 }
 
+body {
+	margin: 0;
+}
+
 a {
 	text-decoration: none;
 }
