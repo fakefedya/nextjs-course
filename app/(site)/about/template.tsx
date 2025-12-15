@@ -4,8 +4,6 @@ interface AboutTemplateProps {
 	children: ReactNode
 }
 
-const AboutTemplate: React.FC<AboutTemplateProps> = ({ children }) => {
+export default function AboutTemplate({ children }: AboutTemplateProps) {
 	return <div style={{ border: '1px solid red' }}>{children}</div>
 }
-
-export default AboutTemplate

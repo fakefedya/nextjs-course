@@ -1,8 +1,8 @@
 .tag {
 	display: inline-block;
 	box-sizing: border-box;
-	border-radius: 20px;
 	margin-right: 5px;
+	border-radius: 20px;
 
 	a {
 		color: inherit;
@@ -26,25 +26,25 @@
 }
 
 .red {
+	font-weight: bold;
 	color: var(--white);
 	background: var(--red);
-	font-weight: bold;
 }
 
 .gray {
+	font-weight: bold;
 	color: var(--white);
 	background: var(--gray);
-	font-weight: bold;
 }
 
 .green {
+	font-weight: bold;
 	color: var(--green);
 	background: var(--green-light);
-	font-weight: bold;
 }
 
 .primary {
+	border: 1px solid var(--primary);
 	color: var(--primary);
 	background: none;
-	border: 1px solid var(--primary);
 }

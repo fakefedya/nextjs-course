@@ -7,7 +7,7 @@ interface HeadingProps {
 	children: ReactNode
 }
 
-export const Heading: React.FC<HeadingProps> = ({ tag = 'h1', children }) => {
+export function Heading({ tag = 'h1', children }: HeadingProps) {
 	switch (tag) {
 		case 'h1':
 			return <h1 className={styles.h1}>{children}</h1>

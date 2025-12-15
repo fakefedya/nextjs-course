@@ -4,8 +4,6 @@ export const metadata: Metadata = {
 	title: 'Блог – О нас',
 }
 
-const About: React.FC = () => {
+export default function About() {
 	return <div>Страница О нас</div>
 }
-
-export default About

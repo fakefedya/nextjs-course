@@ -14,13 +14,13 @@ interface RatingProps extends HTMLAttributes<HTMLDivElement> {
 	setRating?: (i: number) => void
 }
 
-const Rating: React.FC<RatingProps> = ({
+export function Rating({
 	isEditable = false,
 	rating,
 	setRating,
 	className,
 	...props
-}): JSX.Element => {
+}: RatingProps): JSX.Element {
 	const [hoverRating, setHoverRating] = useState<number | null>(null)
 
 	const displayRating = hoverRating ?? rating
@@ -63,5 +63,3 @@ const Rating: React.FC<RatingProps> = ({
 		</div>
 	)
 }
-
-export { Rating }

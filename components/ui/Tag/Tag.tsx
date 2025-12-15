@@ -11,14 +11,14 @@ interface TagProps {
 	children: ReactNode
 }
 
-export const Tag: React.FC<TagProps> = ({
+export function Tag({
 	appearance,
 	color,
 	href,
 	classname,
 	children,
 	...props
-}) => {
+}: TagProps) {
 	return (
 		<div
 			className={cn(styles.tag, classname, {

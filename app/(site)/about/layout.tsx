@@ -4,7 +4,7 @@ interface AboutLayoutProps {
 	children: ReactNode
 }
 
-const AboutLayout: React.FC<AboutLayoutProps> = ({ children }) => {
+export default function AboutLayout({ children }: AboutLayoutProps) {
 	return (
 		<div style={{ border: '1px solid red' }}>
 			<h1>Это лэйаут от О нас</h1>
@@ -12,5 +12,3 @@ const AboutLayout: React.FC<AboutLayoutProps> = ({ children }) => {
 		</div>
 	)
 }
-
-export default AboutLayout

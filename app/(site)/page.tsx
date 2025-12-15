@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
-import { Heading } from '@/components/Heading/Heading'
-import { Button } from '@/components/Button/Button'
-import { Paragraph } from '@/components/Paragraph/Paragraph'
-import { Tag } from '@/components/Tag/Tag'
-import { Rating } from '@/components/Rating/Rating'
+import { Heading } from '@/components/ui/Heading/Heading'
+import { Button } from '@/components/ui/Button/Button'
+import { Paragraph } from '@/components/ui/Paragraph/Paragraph'
+import { Tag } from '@/components/ui/Tag/Tag'
+import { Rating } from '@/components/ui/Rating/Rating'
 
 export const metadata: Metadata = {
 	title: 'Блог – Домашняя страница',

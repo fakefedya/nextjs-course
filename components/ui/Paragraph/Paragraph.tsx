@@ -9,12 +9,12 @@ interface ParagraphProps {
 	children: ReactNode
 }
 
-export const Paragraph: React.FC<ParagraphProps> = ({
+export function Paragraph({
 	appearance = 'normal',
 	children,
 	classname,
 	...props
-}) => {
+}: ParagraphProps) {
 	return (
 		<p
 			className={cn(styles.paragraph, classname, {
