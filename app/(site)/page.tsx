@@ -15,25 +15,6 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-	// return (
-	// 	<>
-	// 		<Heading>Это заголовок</Heading>
-	// 		<Button appearance='primary'>Кнопка</Button>
-	// 		<Button appearance='ghost'>Кнопка</Button>
-	// 		<Paragraph>Привет</Paragraph>
-	// 		<Paragraph classname='test' appearance='big'>
-	// 			Привет Big
-	// 		</Paragraph>
-	// 		<Tag appearance='small' color='red' href='/'>
-	// 			Ссылка
-	// 		</Tag>
-	// 		<Tag appearance='normal' color='ghost'>
-	// 			Гост
-	// 		</Tag>
-	// 		<Rating isEditable={true} rating={3} />
-	// 	</>
-	// )
-
 	return (
 		<div>
 			<h1>Главная страница</h1>
