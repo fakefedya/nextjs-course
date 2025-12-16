@@ -9,6 +9,7 @@ export async function getMenu(firstCategory: number): Promise<MenuItem[]> {
 			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify({ firstCategory }),
+		next: { revalidate: 10 },
 	})
 	return res.json()
 }

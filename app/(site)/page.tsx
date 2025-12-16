@@ -37,9 +37,6 @@ export default async function Home() {
 	return (
 		<div>
 			<h1>Главная страница</h1>
-			<div>
-				<Menu />
-			</div>
 		</div>
 	)
 }
