@@ -1,6 +1,6 @@
 import cn from 'classnames'
 
-import { FirstLevelMenuItem } from '@/interfaces/menu.interface'
+import { FirstLevelMenuItem, PageItem } from '@/interfaces/menu.interface'
 import { TopLevelCategory } from '@/interfaces/page.interface'
 import { getMenu } from '@/lib/menu'
 
@@ -43,10 +43,10 @@ export async function Menu() {
 
 	const renderFirstLevel = () => {
 		return (
-			<>
+			<div className={styles.wrapper}>
 				{firstLevelMenu.map((menuItem) => (
 					<div key={menuItem.route}>
-						<a href={`/${menuItem.route}`}>
+						<a href={`/${menuItem.route}`} className={styles.firstMenuItemLink}>
 							<div
 								className={cn(styles.firstMenuItem, {
 									[styles.firstLevelItemActive]: menuItem.id === firstCategory,
@@ -56,27 +56,30 @@ export async function Menu() {
 								<span className={styles.menuItemName}>{menuItem.name}</span>
 							</div>
 						</a>
-						{menuItem.id === firstCategory && renderSecondLevel()}
+						{menuItem.id === firstCategory && renderSecondLevel(menuItem)}
 					</div>
 				))}
-			</>
+			</div>
 		)
 	}
 
-	const renderSecondLevel = () => {
+	const renderSecondLevel = (menuItem: FirstLevelMenuItem) => {
 		return (
-			<div className=''>
-				{menu.map((menuItem) => (
-					<div key={menuItem._id.secondCategory}>
+			<div className={styles.secondLevelWrapper}>
+				{menu.map((menuItemSecond) => (
+					<div
+						key={menuItemSecond._id.secondCategory}
+						className={styles.secondLevelBlock}
+					>
 						<div className={styles.secondMenuItem}>
-							{menuItem._id.secondCategory}
+							{menuItemSecond._id.secondCategory}
 						</div>
 						<div
 							className={cn(styles.secondMenuItemTest, {
-								[styles.secondLevelItemOpened]: menuItem.isOpened,
+								[styles.secondLevelItemOpened]: menuItemSecond.isOpened,
 							})}
 						>
-							{renderThirdLevel()}
+							{renderThirdLevel(menuItemSecond.pages, menuItem.route)}
 						</div>
 					</div>
 				))}
@@ -84,8 +87,22 @@ export async function Menu() {
 		)
 	}
 
-	const renderThirdLevel = () => {
-		return <> </>
+	const renderThirdLevel = (pages: PageItem[], route: string) => {
+		return (
+			<div className={styles.thirdLevelWrapper}>
+				{pages.map((p) => (
+					<a
+						key={p._id}
+						href={`/${route}/${p.alias}`}
+						className={cn(styles.thirdMenuItem, {
+							[styles.thirdLevelItemActive]: false,
+						})}
+					>
+						{p.category}
+					</a>
+				))}
+			</div>
+		)
 	}
 
 	return <div className={styles.menu}>{renderFirstLevel()}</div>
