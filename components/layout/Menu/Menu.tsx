@@ -1,4 +1,5 @@
 import cn from 'classnames'
+import Link from 'next/link'
 
 import { FirstLevelMenuItem, PageItem } from '@/interfaces/menu.interface'
 import { TopLevelCategory } from '@/interfaces/page.interface'
@@ -46,7 +47,10 @@ export async function Menu() {
 			<div className={styles.wrapper}>
 				{firstLevelMenu.map((menuItem) => (
 					<div key={menuItem.route}>
-						<a href={`/${menuItem.route}`} className={styles.firstMenuItemLink}>
+						<Link
+							href={`/${menuItem.route}`}
+							className={styles.firstMenuItemLink}
+						>
 							<div
 								className={cn(styles.firstMenuItem, {
 									[styles.firstLevelItemActive]: menuItem.id === firstCategory,
@@ -55,7 +59,7 @@ export async function Menu() {
 								{menuItem.icon}
 								<span className={styles.menuItemName}>{menuItem.name}</span>
 							</div>
-						</a>
+						</Link>
 						{menuItem.id === firstCategory && renderSecondLevel(menuItem)}
 					</div>
 				))}
@@ -91,15 +95,15 @@ export async function Menu() {
 		return (
 			<div className={styles.thirdLevelWrapper}>
 				{pages.map((p) => (
-					<a
-						key={p._id}
+					<Link
 						href={`/${route}/${p.alias}`}
+						key={p._id}
 						className={cn(styles.thirdMenuItem, {
 							[styles.thirdLevelItemActive]: false,
 						})}
 					>
 						{p.category}
-					</a>
+					</Link>
 				))}
 			</div>
 		)
