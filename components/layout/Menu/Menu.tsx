@@ -1,9 +1,11 @@
 import cn from 'classnames'
 import Link from 'next/link'
 
-import { FirstLevelMenuItem, PageItem } from '@/interfaces/menu.interface'
+import { FirstLevelMenuItem } from '@/interfaces/menu.interface'
 import { TopLevelCategory } from '@/interfaces/page.interface'
 import { getMenu } from '@/lib/menu'
+
+import { ThirdLevelMenu } from '../ThirdLevelMenu/ThirdLevelMenu'
 
 import CoursesIcon from './icons/courses-icon.svg'
 import ServicesIcon from './icons/services-icon.svg'
@@ -83,27 +85,12 @@ export async function Menu() {
 								[styles.secondLevelItemOpened]: menuItemSecond.isOpened,
 							})}
 						>
-							{renderThirdLevel(menuItemSecond.pages, menuItem.route)}
+							<ThirdLevelMenu
+								pages={menuItemSecond.pages}
+								route={menuItem.route}
+							/>
 						</div>
 					</div>
-				))}
-			</div>
-		)
-	}
-
-	const renderThirdLevel = (pages: PageItem[], route: string) => {
-		return (
-			<div className={styles.thirdLevelWrapper}>
-				{pages.map((p) => (
-					<Link
-						href={`/${route}/${p.alias}`}
-						key={p._id}
-						className={cn(styles.thirdMenuItem, {
-							[styles.thirdLevelItemActive]: false,
-						})}
-					>
-						{p.category}
-					</Link>
 				))}
 			</div>
 		)

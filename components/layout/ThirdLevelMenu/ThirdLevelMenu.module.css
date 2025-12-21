@@ -1,0 +1,15 @@
+.thirdLevelWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.thirdMenuItem {
+	color: var(--gray-variant);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: normal;
+}
+.thirdLevelItemActive {
+	color: var(--primary);
+}
