@@ -6,6 +6,7 @@ import { TopLevelCategory } from '@/interfaces/page.interface'
 import { getMenu } from '@/lib/menu'
 
 import { ThirdLevelMenu } from '../ThirdLevelMenu/ThirdLevelMenu'
+import { SecondLevelMenu } from '../SecondLevelMenu/SecondLevelMenu'
 
 import CoursesIcon from './icons/courses-icon.svg'
 import ServicesIcon from './icons/services-icon.svg'
@@ -62,34 +63,9 @@ export async function Menu() {
 								<span className={styles.menuItemName}>{menuItem.name}</span>
 							</div>
 						</Link>
-						{menuItem.id === firstCategory && renderSecondLevel(menuItem)}
-					</div>
-				))}
-			</div>
-		)
-	}
-
-	const renderSecondLevel = (menuItem: FirstLevelMenuItem) => {
-		return (
-			<div className={styles.secondLevelWrapper}>
-				{menu.map((menuItemSecond) => (
-					<div
-						key={menuItemSecond._id.secondCategory}
-						className={styles.secondLevelBlock}
-					>
-						<div className={styles.secondMenuItem}>
-							{menuItemSecond._id.secondCategory}
-						</div>
-						<div
-							className={cn(styles.secondMenuItemTest, {
-								[styles.secondLevelItemOpened]: menuItemSecond.isOpened,
-							})}
-						>
-							<ThirdLevelMenu
-								pages={menuItemSecond.pages}
-								route={menuItem.route}
-							/>
-						</div>
+						{menuItem.id === firstCategory && (
+							<SecondLevelMenu menu={menu} menuItem={menuItem} />
+						)}
 					</div>
 				))}
 			</div>

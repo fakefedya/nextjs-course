@@ -45,25 +45,3 @@
 	font-weight: 500;
 	line-height: normal;
 }
-
-.secondLevelWrapper {
-	display: flex;
-	flex-direction: column;
-}
-
-.secondLevelBlock {
-	margin-left: 12px;
-	padding: 12px 0 12px 32px;
-	border-left: 1px solid var(--gray-light);
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
-}
-
-.secondMenuItem {
-	text-transform: uppercase;
-	font-size: 12px;
-	font-weight: 300;
-	font-style: normal;
-	color: var(--gray-variant);
-}
