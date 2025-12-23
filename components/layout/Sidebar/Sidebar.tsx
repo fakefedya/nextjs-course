@@ -1,5 +1,8 @@
 import { Menu } from '../Menu/Menu'
 
+import Logo from './logo.svg'
+import styles from './Sidebar.module.css'
+
 interface SidebarProps {
 	className?: string
 }
@@ -7,7 +10,10 @@ interface SidebarProps {
 export function Sidebar({ ...props }: SidebarProps) {
 	return (
 		<div {...props}>
-			<Menu />
+			<div className={styles.wrapper}>
+				<Logo className={styles.logo} />
+				<Menu />
+			</div>
 		</div>
 	)
 }
