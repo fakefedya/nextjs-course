@@ -44,6 +44,11 @@ export function TopSection({ page, products }: TopSectionProps) {
 						seniorSalary={page.hh.seniorSalary}
 					/>
 				)}
+				{page.advantages && page.advantages.length > 0 && (
+					<>
+						<Heading>Преимущества</Heading>
+					</>
+				)}
 			</div>
 		</div>
 	)
