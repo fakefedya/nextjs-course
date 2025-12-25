@@ -4,7 +4,7 @@ import { ReactNode } from 'react'
 import styles from './Tag.module.css'
 
 interface TagProps {
-	appearance?: 'small' | 'normal'
+	appearance: 'small' | 'normal'
 	color?: 'ghost' | 'red' | 'gray' | 'green' | 'primary'
 	href?: string
 	classname?: string

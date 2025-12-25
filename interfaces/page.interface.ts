@@ -20,6 +20,11 @@ export interface HhData {
 	updatedAt: Date
 }
 
+export type HhDataForUI = Pick<
+	HhData,
+	'count' | 'juniorSalary' | 'middleSalary' | 'seniorSalary'
+>
+
 export interface TopPageModel {
 	tags: string[]
 	_id: string

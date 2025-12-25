@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation'
 
 import { getPage } from '@/lib/page'
 import { getMenu } from '@/lib/menu'
+import { TopSection } from '@/components/layout/Page/TopSection/TopSection'
+import { getProducts } from '@/lib/products'
 
 export const metadata: Metadata = {
 	title: 'Страница продукта',
@@ -23,6 +25,13 @@ export default async function Product({
 	params: Promise<{ alias: string }>
 }) {
 	const page = await getPage((await params).alias)
-	// if (!page) notFound()
-	return <div>Страница с {page.title}</div>
+	if (!page) notFound()
+
+	const products = await getProducts(page.category)
+
+	return (
+		<>
+			<TopSection page={page} products={products ?? []} />
+		</>
+	)
 }

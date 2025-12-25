@@ -1,0 +1,50 @@
+import { Heading } from '@/components/ui/Heading/Heading'
+import { TopPageModel } from '@/interfaces/page.interface'
+import { ProductModel } from '@/interfaces/product.interface'
+import { Tag } from '@/components/ui/Tag/Tag'
+import { HhData } from '@/components/ui/HhData/HhData'
+
+import styles from './TopSection.module.css'
+
+export interface TopSectionProps {
+	page: TopPageModel
+	products: ProductModel[]
+}
+
+export function TopSection({ page, products }: TopSectionProps) {
+	return (
+		<div className={styles.wrapper}>
+			<div className={styles.title}>
+				<Heading>{page.title}</Heading>
+				{products && (
+					<Tag color='gray' appearance='normal'>
+						{products.length}
+					</Tag>
+				)}
+				<span>Сортировка</span>
+			</div>
+			<div>
+				{products &&
+					products.map((product) => (
+						<div key={product._id}>{product.title}</div>
+					))}
+			</div>
+			<div className={styles.title}>
+				<Heading tag='h2'>Вакансии — {page.category}</Heading>
+				<Tag color='red' appearance='normal'>
+					hh.ru
+				</Tag>
+			</div>
+			<div className={styles.vacancies}>
+				{page.hh && (
+					<HhData
+						count={page.hh.count}
+						juniorSalary={page.hh.juniorSalary}
+						middleSalary={page.hh.middleSalary}
+						seniorSalary={page.hh.seniorSalary}
+					/>
+				)}
+			</div>
+		</div>
+	)
+}

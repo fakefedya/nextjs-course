@@ -7,6 +7,7 @@
 		'. header header .'
 		'. sidebar main .'
 		'footer footer footer footer';
+	background: #f5f6f8;
 }
 
 .header {
