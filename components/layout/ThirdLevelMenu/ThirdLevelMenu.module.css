@@ -5,11 +5,12 @@
 }
 
 .thirdMenuItem {
-	color: var(--gray-variant);
 	font-size: 14px;
 	font-weight: 500;
 	line-height: normal;
+	color: var(--gray-variant);
 }
+
 .thirdLevelItemActive {
 	color: var(--primary);
 }

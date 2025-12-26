@@ -1,10 +1,12 @@
 .footerWrapper {
-	background-color: var(--primary);
-	height: 72px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	height: 72px;
 	padding: 0 32px;
+
+	background-color: var(--primary);
 }
 
 .links {
@@ -15,16 +17,16 @@
 .rights,
 .links a {
 	font-size: 16px;
-	color: var(--white);
 	font-weight: 500;
 	line-height: normal;
+	color: var(--white);
 }
 
-@media (max-width: 765px) {
+@media (width <= 765px) {
 	.footerWrapper {
-		height: auto;
 		flex-direction: column-reverse;
 		gap: 15px;
+		height: auto;
 		padding: 10px 15px;
 	}
 
@@ -33,9 +35,9 @@
 	}
 
 	.links {
-		width: 100%;
 		flex-direction: column;
 		gap: 10px;
+		width: 100%;
 	}
 
 	.rights,

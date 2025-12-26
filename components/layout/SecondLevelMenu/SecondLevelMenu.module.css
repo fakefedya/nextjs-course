@@ -4,17 +4,17 @@
 }
 
 .secondLevelModule {
-	margin-left: 12px;
-	padding: 12px 0 12px 32px;
-	border-left: 1px solid var(--gray-light);
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+
+	margin-left: 12px;
+	padding: 12px 0 12px 32px;
+	border-left: 1px solid var(--gray-light);
 }
 
 .secondLevelBlock {
 	display: none;
-
 	flex-direction: column;
 	gap: 12px;
 }
@@ -24,10 +24,11 @@
 }
 
 .secondMenuItem {
-	text-transform: uppercase;
+	cursor: pointer;
+
 	font-size: 12px;
 	font-weight: 300;
 	font-style: normal;
 	color: var(--gray-variant);
-	cursor: pointer;
+	text-transform: uppercase;
 }

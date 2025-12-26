@@ -9,6 +9,7 @@
 	grid-template-columns: 24px 1fr;
 	gap: 20px;
 	align-items: center;
+
 	margin-bottom: 12px;
 }
 
@@ -17,8 +18,8 @@
 	transition: 0.3s color ease-in-out;
 
 	svg {
-		height: 24px;
 		width: 24px;
+		height: 24px;
 		fill: var(--gray-variant);
 		transition: 0.3s fill ease-in-out;
 	}

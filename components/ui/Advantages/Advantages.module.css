@@ -1,0 +1,30 @@
+.advantage {
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	gap: 10px 40px;
+	margin-bottom: 30px;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+	background: var(--green-light);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+
+	& svg {
+		height: 24px;
+		width: 24px;
+	}
+}
+
+.vLine {
+	border-left: 1px solid var(--gray-light);
+}
+
+.title {
+	align-self: center;
+	font-weight: bold;
+}

@@ -1,7 +1,8 @@
 .tag {
-	width: fit-content;
 	display: inline-block;
+
 	box-sizing: border-box;
+	width: fit-content;
 	margin-right: 5px;
 	border-radius: 20px;
 
