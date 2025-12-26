@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 
 import { getPage } from '@/lib/page'
 import { getMenu } from '@/lib/menu'
-import { TopSection } from '@/components/layout/Page/TopSection/TopSection'
+import { TopSection } from '@/components/layout/TopSection/TopSection'
 import { getProducts } from '@/lib/products'
 
 export const metadata: Metadata = {

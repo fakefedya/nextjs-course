@@ -1,3 +1,5 @@
+'use client'
+
 import { Heading } from '@/components/ui/Heading/Heading'
 import { TopPageModel } from '@/interfaces/page.interface'
 import { ProductModel } from '@/interfaces/product.interface'
@@ -5,6 +7,7 @@ import { Tag } from '@/components/ui/Tag/Tag'
 import { HhData } from '@/components/ui/HhData/HhData'
 import { Advantages } from '@/components/ui/Advantages/Advantages'
 import { Paragraph } from '@/components/ui/Paragraph/Paragraph'
+import { Sort, SortEnum } from '@/components/ui/Sort/Sort'
 
 import styles from './TopSection.module.css'
 
@@ -23,7 +26,7 @@ export function TopSection({ page, products }: TopSectionProps) {
 						{products.length}
 					</Tag>
 				)}
-				<span>Сортировка</span>
+				<Sort sort={SortEnum.Price} setSort={() => {}} />
 			</div>
 			<div>
 				{products &&
