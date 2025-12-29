@@ -8,8 +8,7 @@ interface AdvantagesProps {
 	className?: string
 }
 
-export function Advantages({ advantages, className }: AdvantagesProps) {
-	console.log(advantages)
+export function Advantages({ advantages }: AdvantagesProps) {
 	return (
 		<div className={styles.wrapper}>
 			{advantages.map((a) => (

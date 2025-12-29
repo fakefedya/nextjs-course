@@ -1,10 +1,15 @@
+'use client'
+
+import { useReducer } from 'react'
+
 import { Heading } from '@/components/ui/Heading/Heading'
 import { TopPageModel } from '@/interfaces/page.interface'
 import { ProductModel } from '@/interfaces/product.interface'
 import { Tag } from '@/components/ui/Tag/Tag'
 import { HhData } from '@/components/ui/HhData/HhData'
 import { Advantages } from '@/components/ui/Advantages/Advantages'
-import { SortClient } from '@/components/ui/Sort/SortClient'
+import { Sort, SortEnum } from '@/components/ui/Sort/Sort'
+import { SortReducer } from '@/components/ui/Sort/sort.reducer'
 
 import styles from './TopSection.module.css'
 
@@ -14,6 +19,18 @@ export interface TopSectionProps {
 }
 
 export function TopSection({ page, products }: TopSectionProps) {
+	const [{ products: sortedProducts, sort }, dispatchSort] = useReducer(
+		SortReducer,
+		{
+			products,
+			sort: SortEnum.Rating,
+		},
+	)
+
+	const setSort = (sort: SortEnum) => {
+		dispatchSort({ type: sort })
+	}
+
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.title}>
@@ -23,11 +40,11 @@ export function TopSection({ page, products }: TopSectionProps) {
 						{products.length}
 					</Tag>
 				)}
-				<SortClient />
+				<Sort sort={sort} setSort={setSort} />
 			</div>
 			<div>
-				{products &&
-					products.map((product) => (
+				{sortedProducts &&
+					sortedProducts.map((product) => (
 						<div key={product._id}>{product.title}</div>
 					))}
 			</div>
