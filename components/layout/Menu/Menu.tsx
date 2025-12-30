@@ -5,7 +5,6 @@ import { FirstLevelMenuItem } from '@/interfaces/menu.interface'
 import { TopLevelCategory } from '@/interfaces/page.interface'
 import { getMenu } from '@/lib/menu'
 
-import { ThirdLevelMenu } from '../ThirdLevelMenu/ThirdLevelMenu'
 import { SecondLevelMenu } from '../SecondLevelMenu/SecondLevelMenu'
 
 import CoursesIcon from './icons/courses-icon.svg'

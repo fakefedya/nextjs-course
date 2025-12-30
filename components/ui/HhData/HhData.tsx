@@ -1,4 +1,3 @@
-import cn from 'classnames'
 
 import { HhDataForUI } from '@/interfaces/page.interface'
 import { formatRub } from '@/utiles/formatRub'
