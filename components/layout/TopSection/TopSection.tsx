@@ -11,6 +11,8 @@ import { Advantages } from '@/components/ui/Advantages/Advantages'
 import { Sort, SortEnum } from '@/components/ui/Sort/Sort'
 import { SortReducer } from '@/components/ui/Sort/sort.reducer'
 
+import { Product } from '../Product/Product'
+
 import styles from './TopSection.module.css'
 
 export interface TopSectionProps {
@@ -45,7 +47,7 @@ export function TopSection({ page, products }: TopSectionProps) {
 			<div>
 				{sortedProducts &&
 					sortedProducts.map((product) => (
-						<div key={product._id}>{product.title}</div>
+						<Product key={product._id} product={product} />
 					))}
 			</div>
 			<div className={styles.title}>

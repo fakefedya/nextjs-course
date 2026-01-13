@@ -5,10 +5,6 @@ interface ProductProps {
 	className?: string
 }
 
-export function Product({ ...props }: ProductProps) {
-	return (
-		<header {...props}>
-			<h1>Header</h1>
-		</header>
-	)
+export function Product({ className, product, ...props }: ProductProps) {
+	return <div {...props}>{product.title}</div>
 }
