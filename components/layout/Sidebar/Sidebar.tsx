@@ -1,3 +1,5 @@
+import { Search } from '@/components/ui/Search/Search'
+
 import { Menu } from '../Menu/Menu'
 
 import Logo from './logo.svg'
@@ -12,6 +14,7 @@ export function Sidebar({ ...props }: SidebarProps) {
 		<div {...props}>
 			<div className={styles.wrapper}>
 				<Logo className={styles.logo} />
+				<Search />
 				<Menu />
 			</div>
 		</div>

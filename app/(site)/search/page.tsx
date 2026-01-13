@@ -1,3 +1,7 @@
 export default function Search() {
-	return <h1>Это Search</h1>
+	return (
+		<>
+			<h1>Страница поиска</h1>
+		</>
+	)
 }

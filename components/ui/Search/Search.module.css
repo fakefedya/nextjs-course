@@ -1,0 +1,32 @@
+.search {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.input {
+	width: 100%;
+	font-family: inherit;
+}
+
+.button {
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	background: var(--primary);
+	/* outline: none; */
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	transition: 0.3s background ease;
+
+	&:hover {
+		background: var(--primary-hover);
+	}
+}
