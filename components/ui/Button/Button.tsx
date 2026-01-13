@@ -5,6 +5,7 @@ import styles from './Button.module.css'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	appearance: 'primary' | 'ghost'
+	arrow?: 'right' | 'left'
 	children: ReactNode
 }
 
