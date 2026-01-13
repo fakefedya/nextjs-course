@@ -31,6 +31,16 @@ const nextConfig: NextConfig = {
 		},
 	},
 	reactCompiler: true,
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'old-images.hb.ru-msk.vkcs.cloud',
+				port: '',
+				pathname: '/uploads/**',
+			},
+		],
+	},
 }
 
 export default nextConfig
