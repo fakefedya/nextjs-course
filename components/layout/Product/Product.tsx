@@ -63,7 +63,15 @@ export function Product({ className, product, ...props }: ProductProps) {
 			</div>
 			<Divider className={styles.hr} />
 			<div className={styles.description}>{product.description}</div>
-			<div className={styles.feature}>Фичи</div>
+			<div className={styles.feature}>
+				{product.characteristics.map((c) => (
+					<div className={styles.characteristics} key={c.name}>
+						<span className={styles.characteristicsName}>{c.name}</span>
+						<span className={styles.characteristicsDots}></span>
+						<span className={styles.characteristicsValue}>{c.value}</span>
+					</div>
+				))}
+			</div>
 			<div className={styles.advBlock}>
 				{product.advantages && (
 					<div className={styles.advantages}>
