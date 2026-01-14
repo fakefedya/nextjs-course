@@ -6,6 +6,7 @@ import { Rating } from '@/components/ui/Rating/Rating'
 import { Tag } from '@/components/ui/Tag/Tag'
 import { Button } from '@/components/ui/Button/Button'
 import { formatRub } from '@/utiles/formatRub'
+import { declineNounWithNum } from '@/utiles/declineNounWithNum'
 import { Divider } from '@/components/ui/Divider/Divider'
 
 import styles from './Product.module.css'
@@ -53,7 +54,13 @@ export function Product({ className, product, ...props }: ProductProps) {
 			</div>
 			<div className={styles.priceTitle}>Цена</div>
 			<div className={styles.creditTitle}>Кредит</div>
-			<div className={styles.rateTitle}>{product.reviewCount} отзывов</div>
+			<div className={styles.rateTitle}>
+				{declineNounWithNum(product.reviewCount, [
+					'отзыв',
+					'отзыва',
+					'отзывов',
+				])}
+			</div>
 			<Divider className={styles.hr} />
 			<div className={styles.description}>{product.description}</div>
 			<div className={styles.feature}>Фичи</div>
