@@ -35,7 +35,7 @@ const nextConfig: NextConfig = {
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: 'old-images.hb.ru-msk.vkcs.cloud',
+				hostname: '**.vkcs.cloud',
 				port: '',
 				pathname: '/uploads/**',
 			},
