@@ -1,0 +1,30 @@
+.review {
+	display: grid;
+	grid-template-columns: [start] auto 1fr auto auto [end];
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.header {
+	display: flex;
+	gap: 15px;
+}
+
+.userIcon {
+	width: 30px;
+	height: 30px;
+}
+
+.description {
+	grid-column: start / end;
+}
+
+.date {
+	margin-right: 10px;
+}
+
+.name {
+	font-weight: bold;
+}

@@ -1,0 +1,24 @@
+.reviews {
+	background: #f5f6f8;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.closed {
+	overflow: hidden;
+	max-height: 0;
+	padding: 0;
+}
+
+.opened {
+	overflow: hidden;
+	max-height: auto;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+.actions {
+	display: flex;
+	gap: 20px;
+}
