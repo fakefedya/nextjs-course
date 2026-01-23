@@ -1,9 +1,9 @@
-import { InputHTMLAttributes } from 'react'
+import { ComponentPropsWithRef } from 'react'
 import cn from 'classnames'
 
 import styles from './Input.module.css'
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+type InputProps = ComponentPropsWithRef<'input'> & {
 	isValid?: boolean
 }
 

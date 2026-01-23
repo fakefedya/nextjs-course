@@ -1,9 +1,9 @@
-import { TextareaHTMLAttributes } from 'react'
+import { ComponentPropsWithRef } from 'react'
 import cn from 'classnames'
 
 import styles from './Textarea.module.css'
 
-interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+type TextareaProps = ComponentPropsWithRef<'textarea'> & {
 	isValid?: boolean
 }
 

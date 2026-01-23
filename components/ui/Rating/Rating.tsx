@@ -1,6 +1,11 @@
 'use client'
 
-import { HTMLAttributes, useState, type JSX, type KeyboardEvent } from 'react'
+import {
+	ComponentPropsWithRef,
+	useState,
+	type JSX,
+	type KeyboardEvent,
+} from 'react'
 import cn from 'classnames'
 
 import styles from './Rating.module.css'
@@ -8,10 +13,10 @@ import RatingIcon from './rating.svg'
 
 const RATING_ARRAY = new Array(5).fill(null)
 
-interface RatingProps extends HTMLAttributes<HTMLDivElement> {
+interface RatingProps extends ComponentPropsWithRef<'div'> {
 	isEditable: boolean
 	rating: number
-	setRating?: (i: number) => void
+	setRating?: (value: number) => void
 }
 
 export function Rating({
