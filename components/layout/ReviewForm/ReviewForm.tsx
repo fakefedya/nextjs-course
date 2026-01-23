@@ -24,7 +24,12 @@ interface ReviewFormHookProps {
 }
 
 export function ReviewForm({ productId, className }: ReviewFormProps) {
-	const { register, control, handleSubmit } = useForm<ReviewFormHookProps>()
+	const {
+		register,
+		control,
+		handleSubmit,
+		formState: { errors },
+	} = useForm<ReviewFormHookProps>()
 
 	const onSubmit = (data: ReviewFormHookProps) => {
 		console.log(data)
@@ -33,11 +38,20 @@ export function ReviewForm({ productId, className }: ReviewFormProps) {
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
 			<div className={cn(className, styles.reviewForm)}>
-				<Input {...register('name')} placeholder='Имя' />
 				<Input
-					{...register('title')}
+					{...register('name', {
+						required: { value: true, message: 'Заполните имя' },
+					})}
+					placeholder='Имя'
+					error={errors.name}
+				/>
+				<Input
+					{...register('title', {
+						required: { value: true, message: 'Заполните заголовок' },
+					})}
 					placeholder='Заголовок отзыва'
 					className={styles.title}
+					error={errors.title}
 				/>
 				<div className={styles.rating}>
 					<span>Оценка:</span>
@@ -55,9 +69,12 @@ export function ReviewForm({ productId, className }: ReviewFormProps) {
 					/>
 				</div>
 				<Textarea
-					{...register('description')}
+					{...register('description', {
+						required: { value: true, message: 'Заполните текст отзыва' },
+					})}
 					placeholder='Текст отзыва'
 					className={styles.description}
+					error={errors.description}
 				/>
 				<div className={styles.submit}>
 					<Button appearance={'primary'}>Отправить</Button>

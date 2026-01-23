@@ -16,3 +16,18 @@
 		color: var(--gray);
 	}
 }
+
+.inputWrapper {
+	position: relative;
+
+	span {
+		position: absolute;
+		left: 0;
+		bottom: -20px;
+		color: var(--red);
+	}
+}
+
+.error {
+	border: 1px solid var(--red);
+}
