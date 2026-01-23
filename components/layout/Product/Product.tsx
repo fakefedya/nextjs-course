@@ -96,7 +96,7 @@ export function Product({ product, ...props }: ProductProps) {
 				</div>
 				<Divider className={styles.hr} />
 				<div className={styles.reviews}>
-					<Reviews reviews={product.reviews} />
+					<Reviews reviews={product.reviews} productId={product._id} />
 				</div>
 			</Card>
 		</>

@@ -8,15 +8,17 @@ import { Button } from '@/components/ui/Button/Button'
 import { ReviewModel } from '@/interfaces/product.interface'
 
 import { Review } from '../Review/Review'
+import { ReviewForm } from '../ReviewForm/ReviewForm'
 
 import styles from './Reviews.module.css'
 
 interface ReviewsProps {
 	className?: string
 	reviews: ReviewModel[]
+	productId: string
 }
 
-export function Reviews({ reviews }: ReviewsProps) {
+export function Reviews({ productId, reviews }: ReviewsProps) {
 	const [isReviewsOpened, setIsReviewsOpened] = useState<boolean>(false)
 
 	return (
@@ -40,6 +42,7 @@ export function Reviews({ reviews }: ReviewsProps) {
 				{reviews.map((r) => (
 					<Review key={r._id} review={r} />
 				))}
+				<ReviewForm productId={productId} />
 			</Card>
 		</>
 	)
