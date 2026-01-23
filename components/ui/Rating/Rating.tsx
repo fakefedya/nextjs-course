@@ -7,6 +7,8 @@ import {
 	type KeyboardEvent,
 } from 'react'
 import cn from 'classnames'
+import { FieldError } from 'react-hook-form'
+import { Span } from 'next/dist/trace'
 
 import styles from './Rating.module.css'
 import RatingIcon from './rating.svg'
@@ -17,6 +19,7 @@ interface RatingProps extends ComponentPropsWithRef<'div'> {
 	isEditable: boolean
 	rating: number
 	setRating?: (value: number) => void
+	error?: FieldError
 }
 
 export function Rating({
@@ -24,6 +27,7 @@ export function Rating({
 	rating,
 	setRating,
 	className,
+	error,
 	...props
 }: RatingProps): JSX.Element {
 	const [hoverRating, setHoverRating] = useState<number | null>(null)
@@ -45,7 +49,12 @@ export function Rating({
 	}
 
 	return (
-		<div className={cn(className)} {...props}>
+		<div
+			className={cn(className, {
+				[styles.error]: error,
+			})}
+			{...props}
+		>
 			{RATING_ARRAY.map((_, i) => (
 				<span
 					key={i}
@@ -65,6 +74,7 @@ export function Rating({
 					/>
 				</span>
 			))}
+			{error && <span className={styles.errorMessage}>{error.message}</span>}
 		</div>
 	)
 }

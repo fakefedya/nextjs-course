@@ -58,12 +58,14 @@ export function ReviewForm({ productId, className }: ReviewFormProps) {
 					<Controller
 						control={control}
 						name='rating'
+						rules={{ required: { value: true, message: 'Укажите рейтинг' } }}
 						render={({ field }) => (
 							<Rating
 								isEditable
 								rating={field.value}
 								ref={field.ref}
 								setRating={field.onChange}
+								error={errors.rating}
 							/>
 						)}
 					/>

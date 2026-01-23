@@ -1,6 +1,8 @@
 .star {
 	margin-right: 5px;
 	fill: var(--gray-light);
+	width: 20px;
+	height: 20px;
 
 	&.filled {
 		fill: var(--primary);
@@ -9,4 +11,18 @@
 	&.isEditable {
 		cursor: pointer;
 	}
+}
+
+.error {
+	position: relative;
+	svg {
+		stroke: var(--red);
+	}
+}
+
+.errorMessage {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	color: var(--red);
 }
