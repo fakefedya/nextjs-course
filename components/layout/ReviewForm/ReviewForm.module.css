@@ -47,3 +47,21 @@
 	right: 20px;
 	cursor: pointer;
 }
+
+.error {
+	background: var(--red-light);
+	padding: 20px;
+	position: relative;
+	border-radius: 5px;
+	margin-top: 20px;
+
+	.close {
+		path {
+			stroke: var(--red);
+		}
+	}
+}
+
+.errorTitle {
+	font-weight: bold;
+}

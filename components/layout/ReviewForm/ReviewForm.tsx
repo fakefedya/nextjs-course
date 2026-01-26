@@ -2,11 +2,14 @@
 
 import cn from 'classnames'
 import { useForm, Controller } from 'react-hook-form'
+import { useState } from 'react'
 
 import { Input } from '@/components/ui/Input/Input'
 import { Rating } from '@/components/ui/Rating/Rating'
 import { Textarea } from '@/components/ui/Textarea/Textarea'
 import { Button } from '@/components/ui/Button/Button'
+import { ReviewFormHookProps } from '@/interfaces/review.interface'
+import { postReview } from '@/lib/review'
 
 import CloseIcon from './close.svg'
 import styles from './ReviewForm.module.css'
@@ -16,23 +19,31 @@ interface ReviewFormProps {
 	className?: string
 }
 
-interface ReviewFormHookProps {
-	name: string
-	title: string
-	description: string
-	rating: number
-}
-
 export function ReviewForm({ productId, className }: ReviewFormProps) {
 	const {
 		register,
 		control,
 		handleSubmit,
 		formState: { errors },
+		reset,
 	} = useForm<ReviewFormHookProps>()
 
-	const onSubmit = (data: ReviewFormHookProps) => {
-		console.log(data)
+	const [isSuccess, setIsSuccess] = useState<boolean>(false)
+	const [isError, setIsError] = useState<string>()
+
+	const onSubmit = async (formData: ReviewFormHookProps) => {
+		try {
+			const data = await postReview(productId, { ...formData })
+			if (data.message) {
+				setIsSuccess(true)
+				reset()
+			} else {
+				setIsError('Что-то пошло не так')
+			}
+		} catch (e) {
+			const message = e instanceof Error ? e.message : 'Unknown error'
+			setIsError(message)
+		}
 	}
 
 	return (
@@ -86,11 +97,26 @@ export function ReviewForm({ productId, className }: ReviewFormProps) {
 					</span>
 				</div>
 			</div>
-			<div className={styles.success}>
-				<div className={styles.successTitle}>Ваш отзыв отправлен</div>
-				<div>Спасибо, ваш отзыв будет опубликован после проверки.</div>
-				<CloseIcon className={styles.close} />
-			</div>
+			{isSuccess && (
+				<div className={styles.success}>
+					<div className={styles.successTitle}>Ваш отзыв отправлен</div>
+					<div>Спасибо, ваш отзыв будет опубликован после проверки.</div>
+					<CloseIcon
+						className={styles.close}
+						onClick={() => setIsSuccess(false)}
+					/>
+				</div>
+			)}
+			{isError && (
+				<div className={styles.error}>
+					<div className={styles.errorTitle}>Ошибка!</div>
+					<div>{isError}</div>
+					<CloseIcon
+						className={styles.close}
+						onClick={() => setIsError(undefined)}
+					/>
+				</div>
+			)}
 		</form>
 	)
 }
