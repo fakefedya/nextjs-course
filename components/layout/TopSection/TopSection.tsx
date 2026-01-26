@@ -1,6 +1,6 @@
 'use client'
 
-import { ComponentPropsWithRef, useReducer } from 'react'
+import { useReducer } from 'react'
 import { motion } from 'framer-motion'
 
 import { Heading } from '@/components/ui/Heading/Heading'
