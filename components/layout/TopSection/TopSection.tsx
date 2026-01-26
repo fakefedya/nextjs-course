@@ -1,6 +1,7 @@
 'use client'
 
-import { useReducer } from 'react'
+import { ComponentPropsWithRef, useReducer } from 'react'
+import { motion } from 'framer-motion'
 
 import { Heading } from '@/components/ui/Heading/Heading'
 import { TopPageModel } from '@/interfaces/page.interface'
@@ -44,12 +45,13 @@ export function TopSection({ page, products }: TopSectionProps) {
 				)}
 				<Sort sort={sort} setSort={setSort} />
 			</div>
-			<div>
-				{sortedProducts &&
-					sortedProducts.map((product) => (
-						<Product key={product._id} product={product} />
-					))}
-			</div>
+			<motion.div className={styles.products} layout>
+				{sortedProducts.map((product) => (
+					<motion.div key={product._id} layout>
+						<Product product={product} />
+					</motion.div>
+				))}
+			</motion.div>
 			<div className={styles.title}>
 				<Heading tag='h2'>Вакансии — {page.category}</Heading>
 				<Tag color='red' appearance='normal'>
