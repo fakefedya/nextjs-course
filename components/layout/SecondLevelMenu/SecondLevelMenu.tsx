@@ -2,6 +2,7 @@
 
 import cn from 'classnames'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 import type { FirstLevelMenuItem, MenuItem } from '@/interfaces/menu.interface'
 import useAppPathname from '@/hooks/usePathname'
@@ -40,6 +41,19 @@ export function SecondLevelMenu({ menu, menuItem }: SecondLevelMenuProps) {
 		})
 	}
 
+	const variants = {
+		visible: {
+			marginBottom: 20,
+			height: 'auto',
+
+			transition: {
+				when: 'beforeChildren',
+				staggerChildren: 0.01,
+			},
+		},
+		hidden: { marginBottom: 0, height: 0 },
+	}
+
 	return (
 		<div className={styles.secondLevelWrapper}>
 			{items.map((menuItemSecond) => (
@@ -54,16 +68,21 @@ export function SecondLevelMenu({ menu, menuItem }: SecondLevelMenuProps) {
 						{menuItemSecond._id.secondCategory}
 					</div>
 
-					<div
+					<motion.div
+						layout
+						variants={variants}
+						initial={'hidden'}
+						animate={menuItemSecond.isOpened ? 'visible' : 'hidden'}
 						className={cn(styles.secondLevelBlock, {
 							[styles.secondLevelBlockOpened]: menuItemSecond.isOpened,
 						})}
 					>
 						<ThirdLevelMenu
+							isSecondOpened={menuItemSecond.isOpened}
 							pages={menuItemSecond.pages}
 							route={menuItem.route}
 						/>
-					</div>
+					</motion.div>
 				</div>
 			))}
 		</div>
