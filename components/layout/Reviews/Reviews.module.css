@@ -23,6 +23,10 @@
 	padding: 30px;
 }
 
+.reviewsWrapper {
+	overflow: hidden;
+}
+
 .actions {
 	display: flex;
 	gap: 20px;

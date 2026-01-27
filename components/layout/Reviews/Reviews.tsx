@@ -23,8 +23,8 @@ export function Reviews({ productId, reviews }: ReviewsProps) {
 	const [isReviewsOpened, setIsReviewsOpened] = useState<boolean>(false)
 
 	const variants = {
-		visible: { opacity: 1, height: 'auto' },
-		hidden: { opacity: 0, height: 0 },
+		visible: { opacity: 1, height: 'auto', paddingTop: 30 },
+		hidden: { opacity: 0, height: 0, paddingTop: 0 },
 	}
 
 	return (
@@ -43,6 +43,7 @@ export function Reviews({ productId, reviews }: ReviewsProps) {
 				animate={isReviewsOpened ? 'visible' : 'hidden'}
 				variants={variants}
 				initial='hidden'
+				className={styles.reviewsWrapper}
 			>
 				<Card className={cn(styles.reviews)}>
 					{reviews.map((r) => (
