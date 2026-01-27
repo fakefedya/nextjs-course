@@ -1,0 +1,39 @@
+.button {
+	cursor: pointer;
+
+	display: inline-block;
+
+	box-sizing: border-box;
+
+	border: none;
+	border: 0;
+
+	font-size: 14px;
+	text-align: center;
+
+	transition: all 0.3s;
+}
+
+.primary {
+	background: var(--primary);
+
+	svg * {
+		fill: var(--white);
+	}
+
+	&:hover {
+		background: var(--primary-hover);
+	}
+}
+
+.white {
+	background: var(--white);
+
+	svg * {
+		fill: var(--primary);
+	}
+
+	&:hover {
+		background: var(--primary-hover);
+	}
+}
