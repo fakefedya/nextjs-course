@@ -5,6 +5,7 @@ import './globals.css'
 import { Header } from '@/components/layout/Header/Header'
 import { Sidebar } from '@/components/layout/Sidebar/Sidebar'
 import { Footer } from '@/components/layout/Footer/Footer'
+import { Up } from '@/components/ui/UpButton/UpButton'
 
 import styles from './layout.module.css'
 
@@ -25,6 +26,7 @@ export default function RootLayout({
 					<Sidebar className={styles.sidebar} />
 					<main className={styles.main}>{children}</main>
 					<Footer className={styles.footer} />
+					<Up />
 				</div>
 			</body>
 		</html>

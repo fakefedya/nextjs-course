@@ -1,0 +1,29 @@
+.up {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background: var(--primary);
+	border-radius: 10px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+	border: 0;
+
+	cursor: pointer;
+
+	transition: 0.3s background ease;
+
+	svg {
+		width: 20.021px;
+		height: 12.192px;
+	}
+
+	&:hover {
+		background: var(--primary-hover);
+	}
+}
