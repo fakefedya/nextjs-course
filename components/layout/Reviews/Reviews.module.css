@@ -5,7 +5,7 @@
 	gap: 25px;
 }
 
-.closed {
+/* .closed {
 	overflow: hidden;
 	max-height: 0;
 	padding: 0;
@@ -16,6 +16,11 @@
 	max-height: auto;
 	padding: 30px;
 	margin-top: 30px;
+} */
+
+.reviews {
+	overflow: hidden;
+	padding: 30px;
 }
 
 .actions {
