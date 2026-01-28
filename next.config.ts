@@ -3,6 +3,7 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
 	output: 'export',
 	distDir: 'public_html',
+
 	/* config options here */
 	turbopack: {
 		rules: {
@@ -34,6 +35,7 @@ const nextConfig: NextConfig = {
 	},
 	reactCompiler: true,
 	images: {
+		unoptimized: true, // Для статического экспорта
 		remotePatterns: [
 			{
 				protocol: 'https',
