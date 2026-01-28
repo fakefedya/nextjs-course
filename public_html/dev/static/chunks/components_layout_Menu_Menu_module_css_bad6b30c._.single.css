@@ -1,0 +1,47 @@
+/* [project]/components/layout/Menu/Menu.module.css [app-client] (css) */
+.Menu-module__6qt_XG__wrapper {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.Menu-module__6qt_XG__firstMenuItem {
+  color: var(--gray-variant);
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 12px;
+  transition: color .3s ease-in-out;
+  display: grid;
+}
+
+.Menu-module__6qt_XG__firstMenuItem svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--gray-variant);
+  transition: fill .3s ease-in-out;
+}
+
+.Menu-module__6qt_XG__firstMenuItem:hover {
+  color: var(--primary);
+}
+
+.Menu-module__6qt_XG__firstMenuItem:hover svg {
+  fill: var(--primary);
+}
+
+.Menu-module__6qt_XG__firstLevelItemActive {
+  color: var(--primary);
+}
+
+.Menu-module__6qt_XG__firstLevelItemActive svg {
+  fill: var(--primary);
+}
+
+.Menu-module__6qt_XG__menuItemName {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/*# sourceMappingURL=components_layout_Menu_Menu_module_css_bad6b30c._.single.css.map*/

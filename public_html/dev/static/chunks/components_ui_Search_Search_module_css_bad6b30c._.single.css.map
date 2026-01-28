@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/ui/Search/Search.module.css"],"sourcesContent":[".search {\r\n\tposition: relative;\r\n\tdisplay: flex;\r\n\tjustify-content: center;\r\n\twidth: 100%;\r\n}\r\n\r\n.input {\r\n\twidth: 100%;\r\n\tfont-family: inherit;\r\n}\r\n\r\n.button {\r\n\tcursor: pointer;\r\n\r\n\tposition: absolute;\r\n\ttop: 3px;\r\n\tright: 3px;\r\n\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tjustify-content: center;\r\n\r\n\twidth: 30px;\r\n\theight: 30px;\r\n\tborder: none;\r\n\tborder-radius: 4px;\r\n\r\n\tbackground: var(--primary);\r\n\r\n\ttransition: 0.3s background ease;\r\n\r\n\t&:hover {\r\n\t\tbackground: var(--primary-hover);\r\n\t}\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;AAKA;;;;;;;;;;;;;;;;AAoBC"}}]
+}

@@ -1,0 +1,20 @@
+/* [project]/components/layout/Reviews/Reviews.module.css [app-client] (css) */
+.Reviews-module__iTHAjG__reviews {
+  background: #f5f6f8;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px;
+  display: flex;
+  overflow: hidden;
+}
+
+.Reviews-module__iTHAjG__reviewsWrapper {
+  overflow: hidden;
+}
+
+.Reviews-module__iTHAjG__actions {
+  gap: 20px;
+  display: flex;
+}
+
+/*# sourceMappingURL=components_layout_Reviews_Reviews_module_css_bad6b30c._.single.css.map*/

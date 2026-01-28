@@ -1,0 +1,33 @@
+/* [project]/components/ui/Advantages/Advantages.module.css [app-client] (css) */
+.Advantages-module__flfIEq__advantage {
+  grid-template-columns: 50px 1fr;
+  gap: 10px 40px;
+  margin-bottom: 30px;
+  display: grid;
+}
+
+.Advantages-module__flfIEq__icon {
+  background: var(--green-light);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.Advantages-module__flfIEq__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.Advantages-module__flfIEq__vLine {
+  border-left: 1px solid var(--gray-light);
+}
+
+.Advantages-module__flfIEq__title {
+  align-self: center;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=components_ui_Advantages_Advantages_module_css_bad6b30c._.single.css.map*/

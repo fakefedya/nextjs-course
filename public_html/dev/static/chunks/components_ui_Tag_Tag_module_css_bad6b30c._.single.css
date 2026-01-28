@@ -1,0 +1,54 @@
+/* [project]/components/ui/Tag/Tag.module.css [app-client] (css) */
+.Tag-module__D6ENtG__tag {
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: fit-content;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.Tag-module__D6ENtG__tag a {
+  color: inherit;
+}
+
+.Tag-module__D6ENtG__small {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.Tag-module__D6ENtG__normal {
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.Tag-module__D6ENtG__ghost {
+  border: 1px solid var(--gray-light);
+}
+
+.Tag-module__D6ENtG__red {
+  color: var(--white);
+  background: var(--red);
+  font-weight: bold;
+}
+
+.Tag-module__D6ENtG__gray {
+  color: var(--white);
+  background: var(--gray);
+  font-weight: bold;
+}
+
+.Tag-module__D6ENtG__green {
+  color: var(--green);
+  background: var(--green-light);
+  font-weight: bold;
+}
+
+.Tag-module__D6ENtG__primary {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: none;
+}
+
+/*# sourceMappingURL=components_ui_Tag_Tag_module_css_bad6b30c._.single.css.map*/

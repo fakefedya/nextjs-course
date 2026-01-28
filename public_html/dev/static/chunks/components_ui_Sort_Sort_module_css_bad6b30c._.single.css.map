@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/ui/Sort/Sort.module.css"],"sourcesContent":[".sortIcon {\r\n\tdisplay: none;\r\n}\r\n\r\n.active {\r\n\tdisplay: flex;\r\n\tgap: 8px;\r\n\talign-items: center;\r\n\r\n\tfont-weight: bold;\r\n\tcolor: var(--primary);\r\n\r\n\t.sortIcon {\r\n\t\tdisplay: block;\r\n\t}\r\n}\r\n\r\n.sort {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 1fr 1fr;\r\n\tgap: 40px;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;;;AAQC;;;;AAKD"}}]
+}

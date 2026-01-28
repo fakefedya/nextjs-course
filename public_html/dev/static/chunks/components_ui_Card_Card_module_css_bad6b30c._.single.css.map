@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/ui/Card/Card.module.css"],"sourcesContent":[".card {\r\n\tborder-radius: 5px;\r\n\tbackground: var(--white);\r\n\tbox-shadow: 0 4px 4px 0 rgb(0 0 0 / 5%);\r\n}\r\n\r\n.blue {\r\n\tbackground: #f9f8ff;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA"}}]
+}

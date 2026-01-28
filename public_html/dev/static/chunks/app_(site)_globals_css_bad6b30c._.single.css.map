@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/(site)/globals.css"],"sourcesContent":[":root {\r\n\t--black: #3b434e;\r\n\t--gray: #b3c0d9;\r\n\t--gray-light: #ebebeb;\r\n\t--gray-variant: #787d85;\r\n\t--white: #fff;\r\n\t--primary: #7653fc;\r\n\t--primary-hover: #5e3aed;\r\n\t--red: #de0000;\r\n\t--red-light: #f5a7a7;\r\n\t--green: #1dc37e;\r\n\t--green-light: #c8f8e4;\r\n}\r\n\r\nbody {\r\n\tmargin: 0;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\nh1 {\r\n\tmargin: 0;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;AAcA;;;;AAIA;;;;AAIA"}}]
+}

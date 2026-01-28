@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/2.%20%D0%92%D0%B5%D0%B1/3.%20%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/nextjs-course/app/%28site%29/courses/%5Balias%5D/loading.tsx"],"sourcesContent":["export default function Loading() {\r\n\treturn <>Загрузка...</>\r\n}\r\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACvB,qBAAO;kBAAE;;AACV"}}]
+}

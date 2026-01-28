@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/2.%20%D0%92%D0%B5%D0%B1/3.%20%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/nextjs-course/app/%28site%29/courses/%5Balias%5D/error.tsx"],"sourcesContent":["'use client' // Error components must be Client Components\r\n\r\nimport { useEffect } from 'react'\r\n\r\nexport default function Error({\r\n\terror,\r\n\treset,\r\n}: {\r\n\terror: Error & { digest?: string }\r\n\treset: () => void\r\n}) {\r\n\tuseEffect(() => {\r\n\t\t// Log the error to an error reporting service\r\n\t\tconsole.error(error)\r\n\t}, [error])\r\n\r\n\treturn (\r\n\t\t<div>\r\n\t\t\t<h2>Something went wrong!</h2>\r\n\t\t\t<button\r\n\t\t\t\tonClick={\r\n\t\t\t\t\t// Attempt to recover by trying to re-render the segment\r\n\t\t\t\t\t() => reset()\r\n\t\t\t\t}\r\n\t\t\t>\r\n\t\t\t\tTry again\r\n\t\t\t</button>\r\n\t\t</div>\r\n\t)\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AAFA,cAAa,6CAA6C;;;AAI3C,SAAS,MAAM,EAC7B,KAAK,EACL,KAAK,EAIL;IACA,IAAA,kNAAS,EAAC;QACT,8CAA8C;QAC9C,QAAQ,KAAK,CAAC;IACf,GAAG;QAAC;KAAM;IAEV,qBACC,8OAAC;;0BACA,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;gBACA,SACC,wDAAwD;gBACxD,IAAM;0BAEP;;;;;;;;;;;;AAKJ"}}]
+}

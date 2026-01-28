@@ -1,0 +1,48 @@
+/* [project]/app/(site)/layout.module.css [app-client] (css) */
+.layout-module__2LdQdG__app {
+  background: #f5f6f8;
+  grid-template: ". header header ."
+                 ". sidebar main ." 1fr
+                 "footer footer footer footer"
+                 / auto 230px minmax(320px, 1200px) auto;
+  gap: 40px 30px;
+  min-height: 100vh;
+  display: grid;
+}
+
+.layout-module__2LdQdG__header {
+  grid-area: header;
+  display: none;
+}
+
+.layout-module__2LdQdG__sidebar {
+  grid-area: sidebar;
+}
+
+.layout-module__2LdQdG__main {
+  grid-area: main;
+}
+
+.layout-module__2LdQdG__footer {
+  grid-area: footer;
+}
+
+@media (max-width: 765px) {
+  .layout-module__2LdQdG__app {
+    grid-template-columns: minmax(320px, 1fr);
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    padding: 0 15px;
+  }
+
+  .layout-module__2LdQdG__sidebar {
+    display: none;
+  }
+
+  .layout-module__2LdQdG__header {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=app_%28site%29_layout_module_css_bad6b30c._.single.css.map*/

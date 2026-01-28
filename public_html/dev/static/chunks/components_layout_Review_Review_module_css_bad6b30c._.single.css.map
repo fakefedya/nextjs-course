@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/layout/Review/Review.module.css"],"sourcesContent":[".review {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: [start] auto 1fr auto auto [end];\r\n\tgap: 10px;\r\n\talign-items: center;\r\n\r\n\tfont-size: 14px;\r\n\tline-height: 24px;\r\n}\r\n\r\n.header {\r\n\tdisplay: flex;\r\n\tgap: 15px;\r\n}\r\n\r\n.userIcon {\r\n\twidth: 30px;\r\n\theight: 30px;\r\n}\r\n\r\n.description {\r\n\tgrid-column: start / end;\r\n}\r\n\r\n.date {\r\n\tmargin-right: 10px;\r\n}\r\n\r\n.name {\r\n\tfont-weight: bold;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;AAUA;;;;;AAKA;;;;;AAKA;;;;AAIA;;;;AAIA"}}]
+}

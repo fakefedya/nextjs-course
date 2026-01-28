@@ -1,0 +1,28 @@
+/* [project]/app/(site)/globals.css [app-client] (css) */
+:root {
+  --black: #3b434e;
+  --gray: #b3c0d9;
+  --gray-light: #ebebeb;
+  --gray-variant: #787d85;
+  --white: #fff;
+  --primary: #7653fc;
+  --primary-hover: #5e3aed;
+  --red: #de0000;
+  --red-light: #f5a7a7;
+  --green: #1dc37e;
+  --green-light: #c8f8e4;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=app_%28site%29_globals_css_bad6b30c._.single.css.map*/

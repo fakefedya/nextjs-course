@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/layout/Sidebar/Sidebar.module.css"],"sourcesContent":[".wrapper {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tgap: 30px;\r\n}\r\n\r\n.logo {\r\n\twidth: 159px;\r\n\theight: 42px;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA"}}]
+}

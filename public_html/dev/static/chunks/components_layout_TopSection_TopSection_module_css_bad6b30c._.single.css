@@ -1,0 +1,37 @@
+/* [project]/components/layout/TopSection/TopSection.module.css [app-client] (css) */
+.TopSection-module__XZivSa__title {
+  grid-template-columns: auto 1fr auto;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  display: grid;
+}
+
+.TopSection-module__XZivSa__vacancies {
+  flex-direction: column;
+  gap: 35px;
+  display: flex;
+}
+
+.TopSection-module__XZivSa__seoText h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.TopSection-module__XZivSa__seoText h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.TopSection-module__XZivSa__seoText h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+/*# sourceMappingURL=components_layout_TopSection_TopSection_module_css_bad6b30c._.single.css.map*/

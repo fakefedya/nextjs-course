@@ -1,0 +1,36 @@
+/* [project]/components/ui/ButtonIcon/ButtonIcon.module.css [app-client] (css) */
+.ButtonIcon-module__rJVAtW__button {
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  border: 0;
+  font-size: 14px;
+  transition: all .3s;
+  display: inline-block;
+}
+
+.ButtonIcon-module__rJVAtW__primary {
+  background: var(--primary);
+}
+
+.ButtonIcon-module__rJVAtW__primary svg * {
+  fill: var(--white);
+}
+
+.ButtonIcon-module__rJVAtW__primary:hover {
+  background: var(--primary-hover);
+}
+
+.ButtonIcon-module__rJVAtW__white {
+  background: var(--white);
+}
+
+.ButtonIcon-module__rJVAtW__white svg * {
+  fill: var(--primary);
+}
+
+.ButtonIcon-module__rJVAtW__white:hover {
+  background: var(--primary-hover);
+}
+
+/*# sourceMappingURL=components_ui_ButtonIcon_ButtonIcon_module_css_bad6b30c._.single.css.map*/

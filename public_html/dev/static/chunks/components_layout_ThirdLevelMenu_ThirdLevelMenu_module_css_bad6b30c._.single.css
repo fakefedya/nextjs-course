@@ -1,0 +1,19 @@
+/* [project]/components/layout/ThirdLevelMenu/ThirdLevelMenu.module.css [app-client] (css) */
+.ThirdLevelMenu-module__EI5KIG__thirdLevelWrapper {
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+}
+
+.ThirdLevelMenu-module__EI5KIG__thirdMenuItem {
+  color: var(--gray-variant);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ThirdLevelMenu-module__EI5KIG__thirdLevelItemActive {
+  color: var(--primary);
+}
+
+/*# sourceMappingURL=components_layout_ThirdLevelMenu_ThirdLevelMenu_module_css_bad6b30c._.single.css.map*/

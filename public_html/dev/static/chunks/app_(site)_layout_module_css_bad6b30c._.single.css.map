@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/(site)/layout.module.css"],"sourcesContent":[".app {\r\n\tdisplay: grid;\r\n\tgrid-template-areas:\r\n\t\t'. header header .'\r\n\t\t'. sidebar main .'\r\n\t\t'footer footer footer footer';\r\n\tgrid-template-columns: auto 230px minmax(320px, 1200px) auto;\r\n\tgrid-template-rows: auto 1fr auto;\r\n\tgap: 40px 30px;\r\n\r\n\tmin-height: 100vh;\r\n\r\n\tbackground: #f5f6f8;\r\n}\r\n\r\n.header {\r\n\tdisplay: none;\r\n\tgrid-area: header;\r\n}\r\n\r\n.sidebar {\r\n\tgrid-area: sidebar;\r\n}\r\n\r\n.main {\r\n\tgrid-area: main;\r\n}\r\n\r\n.footer {\r\n\tgrid-area: footer;\r\n}\r\n\r\n@media (width <= 765px) {\r\n\t.app {\r\n\t\tgrid-template-areas:\r\n\t\t\t'header'\r\n\t\t\t'main'\r\n\t\t\t'footer';\r\n\t\tgrid-template-columns: minmax(320px, 1fr);\r\n\t\tpadding: 0 15px;\r\n\t}\r\n\r\n\t.sidebar {\r\n\t\tdisplay: none;\r\n\t}\r\n\r\n\t.header {\r\n\t\tdisplay: flex;\r\n\t}\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;AAeA;;;;;AAKA;;;;AAIA;;;;AAIA;;;;AAIA;EACC;;;;;;;;EASA;;;;EAIA"}}]
+}

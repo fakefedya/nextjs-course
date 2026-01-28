@@ -1,6 +1,8 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
+	output: 'export',
+	distDir: 'public_html',
 	/* config options here */
 	turbopack: {
 		rules: {

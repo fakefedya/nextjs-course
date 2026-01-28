@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/ui/Tag/Tag.module.css"],"sourcesContent":[".tag {\r\n\tdisplay: inline-block;\r\n\r\n\tbox-sizing: border-box;\r\n\twidth: fit-content;\r\n\tmargin-right: 5px;\r\n\tborder-radius: 20px;\r\n\r\n\ta {\r\n\t\tcolor: inherit;\r\n\t}\r\n}\r\n\r\n.small {\r\n\tpadding: 5px 10px;\r\n\tfont-size: 12px;\r\n\tline-height: 12px;\r\n}\r\n\r\n.normal {\r\n\tpadding: 5px 10px;\r\n\tfont-size: 14px;\r\n\tline-height: 14px;\r\n}\r\n\r\n.ghost {\r\n\tborder: 1px solid var(--gray-light);\r\n}\r\n\r\n.red {\r\n\tfont-weight: bold;\r\n\tcolor: var(--white);\r\n\tbackground: var(--red);\r\n}\r\n\r\n.gray {\r\n\tfont-weight: bold;\r\n\tcolor: var(--white);\r\n\tbackground: var(--gray);\r\n}\r\n\r\n.green {\r\n\tfont-weight: bold;\r\n\tcolor: var(--green);\r\n\tbackground: var(--green-light);\r\n}\r\n\r\n.primary {\r\n\tborder: 1px solid var(--primary);\r\n\tcolor: var(--primary);\r\n\tbackground: none;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;AAQC;;;;AAKD;;;;;;AAMA;;;;;;AAMA;;;;AAIA;;;;;;AAMA;;;;;;AAMA;;;;;;AAMA"}}]
+}

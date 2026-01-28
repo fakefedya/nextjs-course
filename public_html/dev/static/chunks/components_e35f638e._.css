@@ -1,0 +1,595 @@
+/* [project]/components/ui/Heading/Heading.module.css [app-client] (css) */
+.Heading-module__yQyQ8a__h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.Heading-module__yQyQ8a__h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.Heading-module__yQyQ8a__h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+/* [project]/components/ui/Tag/Tag.module.css [app-client] (css) */
+.Tag-module__D6ENtG__tag {
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: fit-content;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.Tag-module__D6ENtG__tag a {
+  color: inherit;
+}
+
+.Tag-module__D6ENtG__small {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.Tag-module__D6ENtG__normal {
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.Tag-module__D6ENtG__ghost {
+  border: 1px solid var(--gray-light);
+}
+
+.Tag-module__D6ENtG__red {
+  color: var(--white);
+  background: var(--red);
+  font-weight: bold;
+}
+
+.Tag-module__D6ENtG__gray {
+  color: var(--white);
+  background: var(--gray);
+  font-weight: bold;
+}
+
+.Tag-module__D6ENtG__green {
+  color: var(--green);
+  background: var(--green-light);
+  font-weight: bold;
+}
+
+.Tag-module__D6ENtG__primary {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: none;
+}
+
+/* [project]/components/ui/Card/Card.module.css [app-client] (css) */
+.Card-module__YZZNYW__card {
+  background: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px #0000000d;
+}
+
+.Card-module__YZZNYW__blue {
+  background: #f9f8ff;
+}
+
+/* [project]/components/ui/HhData/HhData.module.css [app-client] (css) */
+.HhData-module__PbXmdW__hh {
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  display: grid;
+}
+
+.HhData-module__PbXmdW__count {
+  text-align: center;
+  padding: 20px;
+}
+
+.HhData-module__PbXmdW__salary {
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  display: grid;
+}
+
+.HhData-module__PbXmdW__salary > div {
+  border-right: 1px solid var(--gray-light);
+}
+
+.HhData-module__PbXmdW__salary > div:last-child {
+  border-right: none;
+}
+
+.HhData-module__PbXmdW__title {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.HhData-module__PbXmdW__countValue {
+  color: var(--primary);
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 49px;
+}
+
+.HhData-module__PbXmdW__salaryValue {
+  color: var(--black);
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.HhData-module__PbXmdW__rate {
+  grid-template-columns: repeat(3, 20px);
+  justify-content: center;
+  gap: 10px;
+  display: grid;
+}
+
+.HhData-module__PbXmdW__filled circle {
+  opacity: .45;
+  fill: var(--red);
+}
+
+@media (max-width: 1200px) {
+  .HhData-module__PbXmdW__hh {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .HhData-module__PbXmdW__salary {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .HhData-module__PbXmdW__salary > div {
+    border-right: none;
+    border-bottom: 1px solid var(--gray-light);
+    padding-bottom: 20px;
+  }
+
+  .HhData-module__PbXmdW__salary > div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+/* [project]/components/ui/Advantages/Advantages.module.css [app-client] (css) */
+.Advantages-module__flfIEq__advantage {
+  grid-template-columns: 50px 1fr;
+  gap: 10px 40px;
+  margin-bottom: 30px;
+  display: grid;
+}
+
+.Advantages-module__flfIEq__icon {
+  background: var(--green-light);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.Advantages-module__flfIEq__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.Advantages-module__flfIEq__vLine {
+  border-left: 1px solid var(--gray-light);
+}
+
+.Advantages-module__flfIEq__title {
+  align-self: center;
+  font-weight: bold;
+}
+
+/* [project]/components/ui/Sort/Sort.module.css [app-client] (css) */
+.Sort-module__QQ2Q2W__sortIcon {
+  display: none;
+}
+
+.Sort-module__QQ2Q2W__active {
+  color: var(--primary);
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  display: flex;
+}
+
+.Sort-module__QQ2Q2W__active .Sort-module__QQ2Q2W__sortIcon {
+  display: block;
+}
+
+.Sort-module__QQ2Q2W__sort {
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  display: grid;
+}
+
+/* [project]/components/ui/Rating/Rating.module.css [app-client] (css) */
+.Rating-module__BxSULq__star {
+  width: 20px;
+  height: 20px;
+  fill: var(--gray-light);
+  margin-right: 5px;
+}
+
+.Rating-module__BxSULq__star.Rating-module__BxSULq__filled {
+  fill: var(--primary);
+}
+
+.Rating-module__BxSULq__star.Rating-module__BxSULq__isEditable {
+  cursor: pointer;
+}
+
+.Rating-module__BxSULq__error {
+  position: relative;
+}
+
+.Rating-module__BxSULq__error svg {
+  stroke: var(--red);
+}
+
+.Rating-module__BxSULq__errorMessage {
+  color: var(--red);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+/* [project]/components/ui/Divider/Divider.module.css [app-client] (css) */
+.Divider-module__FzTofq__hr {
+  background: var(--gray-light);
+  border: none;
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+}
+
+/* [project]/components/layout/Review/Review.module.css [app-client] (css) */
+.Review-module__gTJp0G__review {
+  grid-template-columns: [start] auto 1fr auto auto[end];
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  display: grid;
+}
+
+.Review-module__gTJp0G__header {
+  gap: 15px;
+  display: flex;
+}
+
+.Review-module__gTJp0G__userIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.Review-module__gTJp0G__description {
+  grid-column: start / end;
+}
+
+.Review-module__gTJp0G__date {
+  margin-right: 10px;
+}
+
+.Review-module__gTJp0G__name {
+  font-weight: bold;
+}
+
+/* [project]/components/ui/Textarea/Textarea.module.css [app-client] (css) */
+.Textarea-module__aYD3da__textarea {
+  color: var(--black);
+  background: var(--white);
+  outline-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  padding: 7px 15px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  box-shadow: 0 4px 4px #0000000d;
+}
+
+.Textarea-module__aYD3da__textarea::placeholder {
+  color: var(--gray);
+}
+
+.Textarea-module__aYD3da__textareaWrapper {
+  position: relative;
+}
+
+.Textarea-module__aYD3da__textareaWrapper span {
+  color: var(--red);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+
+.Textarea-module__aYD3da__error {
+  border: 1px solid var(--red);
+}
+
+/* [project]/components/layout/ReviewForm/ReviewForm.module.css [app-client] (css) */
+.ReviewForm-module__GmzP2G__reviewForm {
+  grid-template-columns: [start] auto 1fr auto[end];
+  align-items: center;
+  gap: 20px 30px;
+  font-size: 14px;
+  line-height: 24px;
+  display: grid;
+}
+
+.ReviewForm-module__GmzP2G__description, .ReviewForm-module__GmzP2G__submit {
+  grid-column: start / end;
+}
+
+.ReviewForm-module__GmzP2G__title {
+  justify-self: left;
+}
+
+.ReviewForm-module__GmzP2G__submit span {
+  margin-left: 15px;
+}
+
+.ReviewForm-module__GmzP2G__rating {
+  grid-template-columns: auto auto;
+  gap: 20px;
+  display: grid;
+}
+
+.ReviewForm-module__GmzP2G__success {
+  background: var(--green-light);
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.ReviewForm-module__GmzP2G__successTitle {
+  font-weight: bold;
+}
+
+.ReviewForm-module__GmzP2G__close {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.ReviewForm-module__GmzP2G__error {
+  background: var(--red-light);
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.ReviewForm-module__GmzP2G__error .ReviewForm-module__GmzP2G__close path {
+  stroke: var(--red);
+}
+
+.ReviewForm-module__GmzP2G__errorTitle {
+  font-weight: bold;
+}
+
+/* [project]/components/layout/Reviews/Reviews.module.css [app-client] (css) */
+.Reviews-module__iTHAjG__reviews {
+  background: #f5f6f8;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px;
+  display: flex;
+  overflow: hidden;
+}
+
+.Reviews-module__iTHAjG__reviewsWrapper {
+  overflow: hidden;
+}
+
+.Reviews-module__iTHAjG__actions {
+  gap: 20px;
+  display: flex;
+}
+
+/* [project]/components/layout/Product/Product.module.css [app-client] (css) */
+.Product-module__VG1PQa__product {
+  grid-template-columns: [start] 70px[logoend] 30px[titlestart] calc(50% - 100px)[middle] 1fr[pricestart] auto[priceend] 40px[creditstart] auto[creditend] 40px[ratestart] auto[end];
+  margin-bottom: 30px;
+  padding: 30px;
+  display: grid;
+}
+
+.Product-module__VG1PQa__logo {
+  grid-area: 1 / start / span 2 / logoend;
+}
+
+.Product-module__VG1PQa__title, .Product-module__VG1PQa__tags {
+  grid-column: titlestart / middle;
+}
+
+.Product-module__VG1PQa__price, .Product-module__VG1PQa__priceTitle {
+  grid-column: pricestart / priceend;
+}
+
+.Product-module__VG1PQa__credit, .Product-module__VG1PQa__creditTitle {
+  grid-column: creditstart / creditend;
+}
+
+.Product-module__VG1PQa__rating, .Product-module__VG1PQa__rateTitle {
+  grid-column: ratestart / end;
+}
+
+.Product-module__VG1PQa__hr, .Product-module__VG1PQa__description, .Product-module__VG1PQa__reviews {
+  grid-column: start / end;
+}
+
+.Product-module__VG1PQa__feature {
+  grid-column: start / middle;
+}
+
+.Product-module__VG1PQa__advBlock {
+  grid-column: middle / end;
+}
+
+.Product-module__VG1PQa__logo img {
+  border-radius: 5px;
+}
+
+.Product-module__VG1PQa__title {
+  align-self: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Product-module__VG1PQa__categories {
+  margin-top: 7px;
+}
+
+.Product-module__VG1PQa__price, .Product-module__VG1PQa__credit {
+  align-self: flex-end;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.Product-module__VG1PQa__credit span {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.Product-module__VG1PQa__rating {
+  align-self: flex-end;
+}
+
+.Product-module__VG1PQa__priceTitle, .Product-module__VG1PQa__creditTitle, .Product-module__VG1PQa__rateTitle {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.Product-module__VG1PQa__price {
+  align-items: center;
+  display: flex;
+}
+
+.Product-module__VG1PQa__oldPrice {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.Product-module__VG1PQa__description {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.Product-module__VG1PQa__advBlock {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.Product-module__VG1PQa__advantages, .Product-module__VG1PQa__disadvantages {
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  line-height: normal;
+  display: flex;
+}
+
+:is(.Product-module__VG1PQa__advantages, .Product-module__VG1PQa__disadvantages) span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Product-module__VG1PQa__advantages {
+  border-left: 2px solid var(--green);
+  padding-left: 15px;
+}
+
+.Product-module__VG1PQa__disadvantages {
+  border-left: 2px solid var(--red);
+  padding-left: 15px;
+}
+
+.Product-module__VG1PQa__characteristics {
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 10px;
+  padding-right: 60px;
+  line-height: 32px;
+  display: grid;
+}
+
+.Product-module__VG1PQa__characteristicsName {
+  font-weight: 700;
+}
+
+.Product-module__VG1PQa__characteristicsValue {
+  font-weight: 500;
+}
+
+.Product-module__VG1PQa__characteristicsDots {
+  border-bottom: 1px dashed var(--gray-light);
+  margin-bottom: 5px;
+}
+
+/* [project]/components/layout/TopSection/TopSection.module.css [app-client] (css) */
+.TopSection-module__XZivSa__title {
+  grid-template-columns: auto 1fr auto;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  display: grid;
+}
+
+.TopSection-module__XZivSa__vacancies {
+  flex-direction: column;
+  gap: 35px;
+  display: flex;
+}
+
+.TopSection-module__XZivSa__seoText h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.TopSection-module__XZivSa__seoText h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.TopSection-module__XZivSa__seoText h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+/*# sourceMappingURL=components_e35f638e._.css.map*/

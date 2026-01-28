@@ -1,0 +1,28 @@
+/* [project]/components/ui/UpButton/UpButton.module.css [app-client] (css) */
+.UpButton-module__74EjpG__up {
+  cursor: pointer;
+  background: var(--primary);
+  border: 0;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: background .3s;
+  display: flex;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 0 4px 4px #0000000d;
+}
+
+.UpButton-module__74EjpG__up svg {
+  width: 20.021px;
+  height: 12.192px;
+}
+
+.UpButton-module__74EjpG__up:hover {
+  background: var(--primary-hover);
+}
+
+/*# sourceMappingURL=components_ui_UpButton_UpButton_module_css_bad6b30c._.single.css.map*/

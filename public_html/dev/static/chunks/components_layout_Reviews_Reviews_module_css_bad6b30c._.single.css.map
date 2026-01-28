@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/layout/Reviews/Reviews.module.css"],"sourcesContent":[".reviews {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tgap: 25px;\r\n\tbackground: #f5f6f8;\r\n}\r\n\r\n/* .closed {\r\n\toverflow: hidden;\r\n\tmax-height: 0;\r\n\tpadding: 0;\r\n}\r\n\r\n.opened {\r\n\toverflow: hidden;\r\n\tmax-height: auto;\r\n\tpadding: 30px;\r\n\tmargin-top: 30px;\r\n} */\r\n\r\n.reviews {\r\n\toverflow: hidden;\r\n\tpadding: 30px;\r\n}\r\n\r\n.reviewsWrapper {\r\n\toverflow: hidden;\r\n}\r\n\r\n.actions {\r\n\tdisplay: flex;\r\n\tgap: 20px;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;AAyBA;;;;AAIA"}}]
+}
