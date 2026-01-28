@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/layout/SecondLevelMenu/SecondLevelMenu.module.css"],"sourcesContent":[".secondLevelWrapper {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n}\r\n\r\n.secondLevelModule {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tgap: 10px;\r\n\r\n\tmargin-left: 12px;\r\n\tpadding: 12px 0 12px 32px;\r\n\tborder-left: 1px solid var(--gray-light);\r\n}\r\n\r\n.secondLevelBlock {\r\n\toverflow: hidden;\r\n\r\n\t/* display: none; */\r\n\tflex-direction: column;\r\n\tgap: 12px;\r\n}\r\n\r\n.secondLevelBlockOpened {\r\n\tdisplay: flex;\r\n}\r\n\r\n.secondMenuItem {\r\n\tcursor: pointer;\r\n\r\n\tfont-size: 12px;\r\n\tfont-weight: 300;\r\n\tfont-style: normal;\r\n\tcolor: var(--gray-variant);\r\n\ttext-transform: uppercase;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;AAKA;;;;;;;;;AAUA;;;;;;AAQA;;;;AAIA"}}]
-}

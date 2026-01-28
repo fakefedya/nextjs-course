@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/ui/Textarea/Textarea.module.css"],"sourcesContent":[".textarea {\r\n\tpadding: 7px 15px;\r\n\tborder: none;\r\n\tborder-radius: 5px;\r\n\r\n\tfont-family: inherit;\r\n\tfont-size: 16px;\r\n\tline-height: 22px;\r\n\tcolor: var(--black);\r\n\r\n\tbackground: var(--white);\r\n\toutline-color: var(--primary);\r\n\tbox-shadow: 0 4px 4px rgb(0 0 0 / 5%);\r\n\r\n\t&::placeholder {\r\n\t\tcolor: var(--gray);\r\n\t}\r\n}\r\n\r\n.textareaWrapper {\r\n\tposition: relative;\r\n\r\n\tspan {\r\n\t\tposition: absolute;\r\n\t\tbottom: -20px;\r\n\t\tleft: 0;\r\n\t\tcolor: var(--red);\r\n\t}\r\n}\r\n\r\n.error {\r\n\tborder: 1px solid var(--red);\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;AAcC;;;;AAKD;;;;AAGC;;;;;;;AAQD"}}]
-}

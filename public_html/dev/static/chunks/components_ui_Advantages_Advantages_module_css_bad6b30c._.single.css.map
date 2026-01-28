@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/ui/Advantages/Advantages.module.css"],"sourcesContent":[".advantage {\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 50px 1fr;\r\n\tgap: 10px 40px;\r\n\tmargin-bottom: 30px;\r\n}\r\n\r\n.icon {\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tjustify-content: center;\r\n\r\n\twidth: 50px;\r\n\theight: 50px;\r\n\tborder-radius: 50%;\r\n\r\n\tbackground: var(--green-light);\r\n\r\n\t& svg {\r\n\t\twidth: 24px;\r\n\t\theight: 24px;\r\n\t}\r\n}\r\n\r\n.vLine {\r\n\tborder-left: 1px solid var(--gray-light);\r\n}\r\n\r\n.title {\r\n\talign-self: center;\r\n\tfont-weight: bold;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;;;;;;AAWC;;;;;AAMD;;;;AAIA"}}]
-}

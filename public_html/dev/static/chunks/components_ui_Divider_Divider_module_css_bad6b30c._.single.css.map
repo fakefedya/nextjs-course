@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/ui/Divider/Divider.module.css"],"sourcesContent":[".hr {\r\n\twidth: 100%;\r\n\theight: 1px;\r\n\tmargin: 20px 0;\r\n\tborder: none;\r\n\r\n\tbackground: var(--gray-light);\r\n}\r\n"],"names":[],"mappings":"AAAA"}}]
-}

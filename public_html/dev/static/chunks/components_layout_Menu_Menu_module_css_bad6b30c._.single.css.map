@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/layout/Menu/Menu.module.css"],"sourcesContent":[".wrapper {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tgap: 20px;\r\n}\r\n\r\n.firstMenuItem {\r\n\tcolor: var(--gray-variant);\r\n\ttransition: 0.3s color ease-in-out;\r\n\tdisplay: grid;\r\n\tgrid-template-columns: 24px 1fr;\r\n\tgap: 20px;\r\n\talign-items: center;\r\n\r\n\tmargin-bottom: 12px;\r\n\r\n\tsvg {\r\n\t\twidth: 24px;\r\n\t\theight: 24px;\r\n\t\tfill: var(--gray-variant);\r\n\t\ttransition: 0.3s fill ease-in-out;\r\n\t}\r\n\r\n\t&:hover {\r\n\t\tcolor: var(--primary);\r\n\r\n\t\tsvg {\r\n\t\t\tfill: var(--primary);\r\n\t\t}\r\n\t}\r\n}\r\n\r\n.firstLevelItemActive {\r\n\tcolor: var(--primary);\r\n\r\n\tsvg {\r\n\t\tfill: var(--primary);\r\n\t}\r\n}\r\n\r\n.menuItemName {\r\n\tfont-size: 18px;\r\n\tfont-weight: 500;\r\n\tline-height: normal;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;;;;AAUC;;;;;;;AAOA;;;;AAGC;;;;AAMF;;;;AAGC;;;;AAKD"}}]
-}

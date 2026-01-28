@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/layout/ThirdLevelMenu/ThirdLevelMenu.module.css"],"sourcesContent":[".thirdLevelWrapper {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tgap: 12px;\r\n}\r\n\r\n.thirdMenuItem {\r\n\tfont-size: 14px;\r\n\tfont-weight: 500;\r\n\tline-height: normal;\r\n\tcolor: var(--gray-variant);\r\n}\r\n\r\n.thirdLevelItemActive {\r\n\tcolor: var(--primary);\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;AAOA"}}]
-}

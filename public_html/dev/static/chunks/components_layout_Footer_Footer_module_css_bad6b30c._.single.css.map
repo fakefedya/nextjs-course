@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/layout/Footer/Footer.module.css"],"sourcesContent":[".footerWrapper {\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tjustify-content: space-between;\r\n\r\n\theight: 72px;\r\n\tpadding: 0 32px;\r\n\r\n\tbackground-color: var(--primary);\r\n}\r\n\r\n.links {\r\n\tdisplay: flex;\r\n\tgap: 40px;\r\n}\r\n\r\n.rights,\r\n.links a {\r\n\tfont-size: 16px;\r\n\tfont-weight: 500;\r\n\tline-height: normal;\r\n\tcolor: var(--white);\r\n}\r\n\r\n@media (width <= 765px) {\r\n\t.footerWrapper {\r\n\t\tflex-direction: column-reverse;\r\n\t\tgap: 15px;\r\n\t\theight: auto;\r\n\t\tpadding: 10px 15px;\r\n\t}\r\n\r\n\t.rights {\r\n\t\twidth: 100%;\r\n\t}\r\n\r\n\t.links {\r\n\t\tflex-direction: column;\r\n\t\tgap: 10px;\r\n\t\twidth: 100%;\r\n\t}\r\n\r\n\t.rights,\r\n\t.links a {\r\n\t\tfont-size: 12px;\r\n\t}\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;AAWA;;;;;AAKA;;;;;;;AAQA;EACC;;;;;;;EAOA;;;;EAIA;;;;;;EAMA"}}]
-}

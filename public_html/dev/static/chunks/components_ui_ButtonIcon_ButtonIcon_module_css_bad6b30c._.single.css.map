@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/ui/ButtonIcon/ButtonIcon.module.css"],"sourcesContent":[".button {\r\n\tcursor: pointer;\r\n\r\n\tdisplay: inline-block;\r\n\r\n\tbox-sizing: border-box;\r\n\tborder: none;\r\n\tborder: 0;\r\n\r\n\tfont-size: 14px;\r\n\ttext-align: center;\r\n\r\n\ttransition: all 0.3s;\r\n}\r\n\r\n.primary {\r\n\tbackground: var(--primary);\r\n\r\n\tsvg * {\r\n\t\tfill: var(--white);\r\n\t}\r\n\r\n\t&:hover {\r\n\t\tbackground: var(--primary-hover);\r\n\t}\r\n}\r\n\r\n.white {\r\n\tbackground: var(--white);\r\n\r\n\tsvg * {\r\n\t\tfill: var(--primary);\r\n\t}\r\n\r\n\t&:hover {\r\n\t\tbackground: var(--primary-hover);\r\n\t}\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;;;AAeA;;;;AAGC;;;;AAIA;;;;AAKD;;;;AAGC;;;;AAIA"}}]
-}

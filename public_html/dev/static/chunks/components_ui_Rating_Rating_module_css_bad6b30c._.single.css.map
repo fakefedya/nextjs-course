@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/ui/Rating/Rating.module.css"],"sourcesContent":[".star {\r\n\twidth: 20px;\r\n\theight: 20px;\r\n\tmargin-right: 5px;\r\n\tfill: var(--gray-light);\r\n\r\n\t&.filled {\r\n\t\tfill: var(--primary);\r\n\t}\r\n\r\n\t&.isEditable {\r\n\t\tcursor: pointer;\r\n\t}\r\n}\r\n\r\n.error {\r\n\tposition: relative;\r\n\r\n\tsvg {\r\n\t\tstroke: var(--red);\r\n\t}\r\n}\r\n\r\n.errorMessage {\r\n\tposition: absolute;\r\n\tbottom: -20px;\r\n\tleft: 0;\r\n\tcolor: var(--red);\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;AAMC;;;;AAIA;;;;AAKD;;;;AAGC;;;;AAKD"}}]
-}
