@@ -1,0 +1,4 @@
+npm test
+
+npm run lint:fix
+npm run stylelint:fix
