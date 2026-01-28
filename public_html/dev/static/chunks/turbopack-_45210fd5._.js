@@ -1736,7 +1736,7 @@ let BACKEND;
  * ECMAScript DOM runtime.
  *
  * It will be appended to the base development runtime code.
- */ /* eslint-disable @typescript-eslint/no-unused-vars */ /// <reference path="../base/runtime-base.ts" />
+ */   /// <reference path="../base/runtime-base.ts" />
 /// <reference path="../base/dev-base.ts" />
 /// <reference path="./runtime-backend-dom.ts" />
 /// <reference path="../../../shared/require-type.d.ts" />
@@ -1821,7 +1821,7 @@ function _eval({ code, url, map }) {
         // See https://stackoverflow.com/a/26603875
         unescape(encodeURIComponent(map)))}`;
     }
-    // eslint-disable-next-line no-eval
+     
     return eval(code);
 }
 const chunksToRegister = globalThis.TURBOPACK;
