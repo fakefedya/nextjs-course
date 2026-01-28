@@ -1,8 +1,8 @@
 .reviews {
-	background: #f5f6f8;
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
+	background: #f5f6f8;
 }
 
 /* .closed {

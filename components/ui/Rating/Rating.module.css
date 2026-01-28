@@ -1,8 +1,8 @@
 .star {
-	margin-right: 5px;
-	fill: var(--gray-light);
 	width: 20px;
 	height: 20px;
+	margin-right: 5px;
+	fill: var(--gray-light);
 
 	&.filled {
 		fill: var(--primary);
@@ -15,6 +15,7 @@
 
 .error {
 	position: relative;
+
 	svg {
 		stroke: var(--red);
 	}

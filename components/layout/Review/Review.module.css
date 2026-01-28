@@ -1,8 +1,9 @@
 .review {
 	display: grid;
 	grid-template-columns: [start] auto 1fr auto auto [end];
+	gap: 10px;
 	align-items: center;
-	gap: 10px 10px;
+
 	font-size: 14px;
 	line-height: 24px;
 }

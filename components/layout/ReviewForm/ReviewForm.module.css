@@ -1,11 +1,11 @@
 .reviewForm {
-	line-height: 24px;
-	font-size: 14px;
-
 	display: grid;
 	grid-template-columns: [start] auto 1fr auto [end];
 	gap: 20px 30px;
 	align-items: center;
+
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .description,
@@ -30,11 +30,13 @@
 }
 
 .success {
-	background: var(--green-light);
-	padding: 20px;
 	position: relative;
-	border-radius: 5px;
+
 	margin-top: 20px;
+	padding: 20px;
+	border-radius: 5px;
+
+	background: var(--green-light);
 }
 
 .successTitle {
@@ -42,18 +44,20 @@
 }
 
 .close {
+	cursor: pointer;
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	cursor: pointer;
 }
 
 .error {
-	background: var(--red-light);
-	padding: 20px;
 	position: relative;
-	border-radius: 5px;
+
 	margin-top: 20px;
+	padding: 20px;
+	border-radius: 5px;
+
+	background: var(--red-light);
 
 	.close {
 		path {

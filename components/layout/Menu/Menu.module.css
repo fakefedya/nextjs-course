@@ -5,17 +5,14 @@
 }
 
 .firstMenuItem {
+	color: var(--gray-variant);
+	transition: 0.3s color ease-in-out;
 	display: grid;
 	grid-template-columns: 24px 1fr;
 	gap: 20px;
 	align-items: center;
 
 	margin-bottom: 12px;
-}
-
-.firstMenuItem {
-	color: var(--gray-variant);
-	transition: 0.3s color ease-in-out;
 
 	svg {
 		width: 24px;

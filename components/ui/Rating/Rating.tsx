@@ -8,7 +8,6 @@ import {
 } from 'react'
 import cn from 'classnames'
 import { FieldError } from 'react-hook-form'
-import { Span } from 'next/dist/trace'
 
 import styles from './Rating.module.css'
 import RatingIcon from './rating.svg'

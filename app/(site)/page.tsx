@@ -1,7 +1,5 @@
 import { Metadata } from 'next'
 
-import { getMenu } from '@/lib/menu'
-import { Menu } from '@/components/layout/Menu/Menu'
 import { Input } from '@/components/ui/Input/Input'
 import { Textarea } from '@/components/ui/Textarea/Textarea'
 

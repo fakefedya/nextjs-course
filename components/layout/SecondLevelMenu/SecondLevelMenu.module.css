@@ -15,6 +15,7 @@
 
 .secondLevelBlock {
 	overflow: hidden;
+
 	/* display: none; */
 	flex-direction: column;
 	gap: 12px;
